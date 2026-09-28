@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Қазақша жазу мәдениеті</title>
+  <meta name="description" content="Қазақша жазу мәдениеті, әлеуметтік желідегі сленгтер, қысқарған сөздер және сауаттылық ережелері.">
+  <meta name="keywords" content="қазақша жазу мәдениеті, сленгтер, қазақ тілі, сауатты жазу, эмодзи мағынасы">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+Kazakh:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #0d9488;
+      --primary-hover: #0f766e;
+      --secondary-color: #f0fdf4;
+      --dark-text: #1e293b;
+      --light-bg: #f8fafc;
+      --card-border: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Noto Sans Kazakh', 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #0d9488 0%, #047857 100%);
+      color: white;
+      padding: 80px 0 60px 0;
+      border-radius: 0 0 30px 30px;
+    }
+
+    .hero-title {
+      font-weight: 800;
+      font-size: 2.8rem;
+      letter-spacing: -0.5px;
+    }
+
+    .custom-card {
+      background: white;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .badge-theme {
+      background-color: #ccfbf1;
+      color: #0f766e;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 50px;
+    }
+
+    .search-box {
+      border-radius: 15px;
+      padding: 15px 20px;
+      font-size: 1.1rem;
+      border: 2px solid #cbd5e1;
+    }
+
+    .search-box:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.25rem rgba(13, 148, 136, 0.15);
+    }
+
+    .result-box {
+      background-color: #f1f5f9;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 15px;
+    }
+
+    .emoji-btn {
+      font-size: 2rem;
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .emoji-btn:hover {
+      background: #e0f2fe;
+      transform: scale(1.1);
+    }
+
+    .rule-icon {
+      width: 45px;
+      height: 45px;
+      background: #ccfbf1;
+      color: #0f766e;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .btn-custom {
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 12px;
+      padding: 12px 28px;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: var(--primary-hover);
+      color: white;
+    }
+
+    footer {
+      background-color: white;
+      border-top: 1px solid var(--card-border);
+      padding: 30px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark style="background-color: #0f766e;">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">Қазақша жазу мәдениеті</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#dictionary">Сөздік</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#emojis">Эмодзилер</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#rules">Ережелер</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#quiz">Тест</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <span class="badge badge-theme mb-3">Онлайн сөздік & кеңесші</span>
+      <h1 class="hero-title mb-3">Қазақша жазу мәдениеті</h1>
+      <p class="lead max-w-2xl mx-auto opacity-90">
+        Әлеуметтік желі мен мессенджерлерде сауатты, әдеби әрі көркем жазуға арналған ашық платформа.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <div class="container my-5">
+
+    <!-- Section 1: Slang & Abbreviation Dictionary -->
+    <div id="dictionary" class="custom-card">
+      <div class="d-flex align-items-center mb-4">
+        <div class="rule-icon me-3">🔍</div>
+        <div>
+          <h3 class="mb-0 fw-bold">Сленг пен қысқартуларды іздеу</h3>
+          <small class="text-muted">Жиі қолданылатын бейресми сөзді жазып, әдеби нұсқасын табыңыз</small>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-9">
+          <input type="text" id="searchInput" class="form-control search-box" placeholder="Мысалы: нестп, спс, каласын, пж, сорян, крт..." onkeyup="searchSlang()">
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-custom w-100 h-100" onclick="searchSlang()">Тексеру</button>
+        </div>
+      </div>
+
+      <div id="resultBox" class="result-box d-none">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h5 id="slangWord" class="fw-bold text-danger mb-1"></h5>
+            <div id="literaryWord" class="fs-5 text-success fw-bold mb-2"></div>
+            <p id="slangAdvice" class="mb-0 text-secondary"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common examples chips -->
+      <div class="mt-4">
+        <small class="text-muted d-block mb-2">Жиі ізделетін сөздер:</small>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('нестп')">нестп</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('спс')">спс</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('каласын')">каласын</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('пж')">пж</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('кездесемз')">кездесемз</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('сорян')">сорян</button>
+          <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="setSearch('крт')">крт</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Emoji to Literary Phrase -->
+    <div id="emojis" class="custom-card">
+      <div class="d-flex align-items-center mb-4">
+        <div class="rule-icon me-3">💬</div>
+        <div>
+          <h3 class="mb-0 fw-bold">Эмодзи мағынасы және сөздік баламасы</h3>
+          <small class="text-muted">Эмодзиді түртсеңіз, оның қазақ тіліндегі көркем баламасы шығады</small>
+        </div>
+      </div>
+
+      <div class="row g-3 text-center mb-3">
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('😂', 'Ішек-сілесі қату, мәз болу, рахаттана күлу', '«Бұл оқиғаны естіп, бәріміз ішек-сілеміз қата күлдік.»')">😂</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('❤️', 'Шын жүректен ұнату, сүйіспеншілік, құрмет', '«Сіздің жасаған қамқорлығыңызға шын жүректен ырзамын.»')">❤️</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('🥺', 'Көңілі босау, қиылу, өтіну', '«Өтінішін қиыла жеткізді.»')">🥺</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('😱', 'Төбе шашы тік тұру, қатты шошу, таңғалу', '«Жаңалықты естігенде бәрінің төбе шашы тік тұрды.»')">😱</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('🤔', 'Ойға бату, толғану, күмәндану', '«Бұл шешім туралы ұзақ толғанды.»')">🤔</div>
+        </div>
+        <div class="col-4 col-md-2">
+          <div class="emoji-btn" onclick="showEmoji('😡', 'Ашуға міну, қабақ шыту, кейіс білдіру', '«Әділетсіздікті көріп, ашуға мінді.»')">😡</div>
+        </div>
+      </div>
+
+      <div id="emojiResult" class="result-box d-none">
+        <h4 id="selectedEmoji" class="mb-2"></h4>
+        <div id="emojiMeaning" class="fw-bold text-dark mb-1"></div>
+        <div id="emojiExample" class="fst-italic text-secondary"></div>
+      </div>
+    </div>
+
+    <!-- Section 3: Rules of Literacy -->
+    <div id="rules" class="custom-card">
+      <h3 class="fw-bold mb-4">Сауатты жазудың 5 алтын ережесі</h3>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-start">
+            <div class="rule-icon me-3">1</div>
+            <div>
+              <h5 class="fw-bold">Әдеби тіл нормасын сақтау</h5>
+              <p class="text-muted">Ауызекі сөздер мен сленгтерді ресми қарым-қатынаста немесе оқу барысында қолданбаған жөн.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start">
+            <div class="rule-icon me-3">2</div>
+            <div>
+              <h5 class="fw-bold">Сөзді толық жазу</h5>
+              <p class="text-muted">«Нестп», «спс» сияқты қысқартулар сөздің табиғи құрылымын бузады. Сөздерді толық жазуға дағдыланыңыз.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start">
+            <div class="rule-icon me-3">3</div>
+            <div>
+              <h5 class="fw-bold">Эмодзиді орынды пайдалану</h5>
+              <p class="text-muted">Эмодзи мәтінді толық алмастыра алмайды. Оны тек эмоцияны толықтыру үшін аз мөлшерде қолданыңыз.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-start">
+            <div class="rule-icon me-3">4</div>
+            <div>
+              <h5 class="fw-bold">Тыныс белгілерін қою</h5>
+              <p class="text-muted">Сұрақ, леп белгісі мен үтірді дұрыс қою сөйлемнің мағынасын дәл жеткізеді.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Interactive Quiz -->
+    <div id="quiz" class="custom-card">
+      <div class="d-flex align-items-center mb-4">
+        <div class="rule-icon me-3">📝</div>
+        <div>
+          <h3 class="mb-0 fw-bold">Өз біліміңді тексер (Тест)</h3>
+          <small class="text-muted">Жазу сауаттылығыңызды тексеріп көрсеңіз болады</small>
+        </div>
+      </div>
+
+      <div id="quizContainer">
+        <div class="mb-4">
+          <h5 id="quizQuestion" class="fw-bold">1. «Нестп жатырсың?» сөйлемінің дұрыс әдеби нұсқасын таңдаңыз:</h5>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="quizOpt" id="opt1" value="0">
+            <label class="form-check-label" for="opt1" id="lbl1">Не істеп жатырсың?</label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="quizOpt" id="opt2" value="1">
+            <label class="form-check-label" for="opt2" id="lbl2">Нестеп жатсын?</label>
+          </div>
+          <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="quizOpt" id="opt3" value="2">
+            <label class="form-check-label" for="opt3" id="lbl3">Не істеп жатсың?</label>
+          </div>
+        </div>
+        <button class="btn btn-custom" onclick="nextQuestion()">Келесі сұрақ</button>
+      </div>
+
+      <div id="quizScore" class="text-center py-4 d-none">
+        <h4 class="fw-bold mb-2">Тест аяқталды! 🎉</h4>
+        <p id="scoreText" class="fs-5 text-success fw-bold"></p>
+        <button class="btn btn-outline-secondary mt-2" onclick="restartQuiz()">Қайта өту</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0 text-muted">©️ Қазақша жазу мәдениеті platform. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript logic -->
+  <script>
+    // Dictionary Data
+    const slangDb = {
+      "нестп": { literary: "Не істеп жатырсың?", advice: "Бейресми чатта жиі қолданылады. Әдеби жазуда сөздерді толық жазу ұсынылады." },
+      "нестеп": { literary: "Не істеп жатырсың?", advice: "Сөйлеу тіліндегі дыбыстық өзгеріс. Әдеби нұсқасы: «Не істеп жатырсың?»." },
+      "спс": { literary: "Рақмет / Рахмет", advice: "Орыс тіліндегі «спасибо» сөзінен қысқарған. Қазақша «Рақмет» деп жазған дұрыс." },
+      "каласын": { literary: "Қалайсың?", advice: "Қазақ әріптерін (Қ, А, Ы) толық қолдану жазу мәдениетін көрсетеді." },
+      "қайсың": { literary: "Қалайсың?", advice: "Ауызекі сөйлеу нұсқасы." },
+      "пж": { literary: "Өтініш / Өтінемін", advice: "Орыс тіліндегі «пожалуйста» сөзінен қысқартылған." },
+      "сорян": { literary: "Кешіріңіз / Кешір", advice: "Ағылшын («sorry») және орыс тілі арқылы енген сленг." },
+      "кездесемз": { literary: "Кездесеміз", advice: "Соңғы дауысты «і» дыбысы түсіп қалған." },
+      "крт": { literary: "Қысқасы / Қорыта айтқанда", advice: "Сөздік қорды азайтатын қысқарту." },
+      "нзч": { literary: "Оқасы жоқ / Оқасы бар", advice: "«Не за что» сөзінен қысқарған. Қазақша «Оқасы жоқ» деген дұрыс." }
+    };
+
+    function searchSlang() {
+      const val = document.getElementById('searchInput').value.toLowerCase().trim();
+      const resBox = document.getElementById('resultBox');
+      
+      if (!val) {
+        resBox.classList.add('d-none');
+        return;
+      }
+
+      resBox.classList.remove('d-none');
+      if (slangDb[val]) {
+        document.getElementById('slangWord').innerText = "❌ Бейресми/Қысқарту: " + val;
+        document.getElementById('literaryWord').innerText = "✅ Әдеби нұсқасы: " + slangDb[val].literary;
+        document.getElementById('slangAdvice').innerText = "💡 Кеңес: " + slangDb[val].advice;
+      } else {
+        document.getElementById('slangWord').innerText = "🔍 Сөз: " + val;
+        document.getElementById('literaryWord').innerText = "✅ Дұрыс жазылған немесе сөздікте жоқ";
+        document.getElementById('slangAdvice').innerText = "Бұл сөз дұрыс жазылған болуы мүмкін немесе әлі сөздік қорымызға енгізілмеген.";
+      }
+    }
+
+    function setSearch(word) {
+      document.getElementById('searchInput').value = word;
+      searchSlang();
+    }
+
+    function showEmoji(emoji, meaning, example) {
+      const res = document.getElementById('emojiResult');
+      res.classList.remove('d-none');
+      document.getElementById('selectedEmoji').innerText = emoji + " Эмодзи мағынасы:";
+      document.getElementById('emojiMeaning').innerText = "Қазақша баламасы: " + meaning;
+      document.getElementById('emojiExample').innerText = "Сөйлемдегі қолданылуы: " + example;
+    }
+
+    // Quiz Data
+    const quizData = [
+      {
+        q: "1. «Нестп жатырсың?» сөйлемінің дұрыс әдеби нұсқасын таңдаңыз:",
+        opts: ["Не істеп жатырсың?", "Нестеп жатсын?", "Не істеп жатсың?"],
+        ans: 0
+      },
+      {
+        q: "2. Чаттағы «спс» сөзінің орнына қай сөзді жазған дұрыс?",
+        opts: ["Сенкс", "Рақмет", "Пожалуиста"],
+        ans: 1
+      },
+      {
+        q: "3. Эмодзилер жазу мәдениетінде қандай рөл атқарады?",
+        opts: ["Сөздің орнын толық басады", "Мәтінді тек толықтырушы эмоция ретінде жүреді", "Мүлдем қолдануға болмайды"],
+        ans: 1
+      },
+      {
+        q: "4. «Сорян» сленгінің әдеби қазақша баламасы қайсысы?",
+        opts: ["Ештеңе етпейді", "Кешіріңіз", "Мәселе жоқ"],
+        ans: 1
+      },
+      {
+        q: "5. Қазақ тілінде сауатты жазу үшін не істеу керек?",
+        opts: ["Сөздерді мүмкіндігінше қысқартып жазу", "Қазақша әріптерді (Ә, Қ, Ң, Ғ...) толық қолдану", "Тек эмодзимен сөйлесу"],
+        ans: 1
+      }
+    ];
+
+    let currentQ = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      const q = quizData[currentQ];
+      document.getElementById('quizQuestion').innerText = q.q;
+      document.getElementById('lbl1').innerText = q.opts[0];
+      document.getElementById('lbl2').innerText = q.opts[1];
+      document.getElementById('lbl3').innerText = q.opts[2];
+      
+      const radios = document.getElementsByName('quizOpt');
+      radios.forEach(r => r.checked = false);
+    }
+
+    function nextQuestion() {
+      const selected = document.querySelector('input[name="quizOpt"]:checked');
+      if (!selected) {
+        alert("Өтініш, жауаптың бірін таңдаңыз!");
+        return;
+      }
+
+      if (parseInt(selected.value) === quizData[currentQ].ans) {
+        score++;
+      }
+
+      currentQ++;
+      if (currentQ < quizData.length) {
+        loadQuestion();
+      } else {
+        document.getElementById('quizContainer').classList.add('d-none');
+        document.getElementById('quizScore').classList.remove('d-none');
+        document.getElementById('scoreText').innerText = `Сіз ${quizData.length} сұрақтың ${score}-іне дұрыс жауап бердіңіз!`;
+      }
+    }
+
+    function restartQuiz() {
+      currentQ = 0;
+      score = 0;
+      document.getElementById('quizContainer').classList.remove('d-none');
+      document.getElementById('quizScore').classList.add('d-none');
+      loadQuestion();
+    }
+  </script>
+</body>
+</html>
